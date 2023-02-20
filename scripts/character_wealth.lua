@@ -6,10 +6,6 @@ function onInit()
 	if Session.IsHost then
 		Comm.registerSlashHandler("charwealth", processCharacterWealth);
 	end
-	
-	local msg = {sender = "", font = "emotefont"};
-	msg.text = "CharacterWealth v1.1.0.2 Extension for FG 3.3+ rulesets: PFRPG and 3.5e, by Wattabout2ndBrkfst, upgraded by FeatherRin";
-	ChatManager.registerLaunchMessage(msg);
 end
 
 function processCharacterWealth(sCommand, sParams)
